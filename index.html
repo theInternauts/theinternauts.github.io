@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>test</title>
-  <meta charset="utf-8">
-
+  <title>3d Web Fest | the Internauts</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+  <!--
   <style type="text/css">
-    body {
-      margin: 0px;
-      overflow: hidden;
+    html {
+      width: 100%;
+      height: 100%;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#002851+28,001326+100 */
+      background: #002851; /* Old browsers */
+      background: -moz-radial-gradient(center, ellipse cover, #002851 28%, #001326 100%); /* FF3.6-15 */
+      background: -webkit-radial-gradient(center, ellipse cover, #002851 28%,#001326 100%); /* Chrome10-25,Safari5.1-6 */
+      background: radial-gradient(ellipse at center, #002851 28%,#001326 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002851', endColorstr='#001326',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+  </style>
+  !-->
+  <style type="text/css">
+    html {
+      width: 100%;
+      height: 100%;
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0c345c+0,002142+100 */
       background: #0c345c; /* Old browsers */
       background: -moz-radial-gradient(center, ellipse cover, #0c345c 0%, #002142 100%); /* FF3.6-15 */
@@ -16,11 +29,74 @@
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c345c', endColorstr='#002142',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     }
   </style>
+  <style type="text/css">
+    body {
+      text-align: center;
+      margin: 0;
+      overflow: hidden;
+      background-color: #0c345c;
+    }
+    .info {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0 auto;
+      position: absolute;
+      z-index: 100;
+      display: block;
+      font-family: sans-serif;
+      font-size: 1em;
+      min-height: 125px;
+      min-width: 220px;
+      background-color: transparent !important;
+    }
+    .info .title-block,
+    .info .tagline {
+      padding: 10px;
+      text-align: center;
+      text-transform: uppercase;
+      box-sizing: border-box;
+    }
+    .info .title-block {
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      font-size: 1.4em;
+      letter-spacing: 0.1em;
+    }
+    .info .tagline {
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: #dd0000;
+      font-size: 1.8em;
+    }
+    .video-block {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      height: 300px;
+      width: 100%;
+      max-width: 300px;
+      z-index: 10;
+    }
+    .video-block iframe {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
   <script src="three.min.js"></script>
+  <!-- <script src="Projector.js"></script> -->
+  <!-- <script src="CSS3DRenderer.js"></script> -->
+  <script src="CSS3DRenderer_working_version.js"></script>
+  <!-- <script src="https://rawgit.com/mrdoob/three.js/master/examples/js/renderers/CSS3DRenderer.js"></script> -->
   <script src="starfield_0.js"></script>
   <!-- <script src="Three.js"></script><script src="starfield_1.js"></script> -->
   <!-- <script src="Three.js"></script><script src="starfield_2.js"></script> -->
+<!--   <div class="info" id="info">
+    <div class="title-block">3d Web Fest</div>
+    <div class="tagline">The Shift is on</div>
+  </div> -->
+  <div id="video-block" class="video-block">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/R8zoziriO0A?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
 </body>
 </html>
